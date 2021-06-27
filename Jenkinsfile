@@ -7,9 +7,9 @@ pipeline {
             }
         }
 
-        stage('Chrome') {
+        stage('Run Test') {
             steps {
-		sh 'mvn clean test "-Dsurefire.suiteXmlFiles=src/test/resources/TestNG.xml" "-Dtestng.dtd.http=true"'
+		bat 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/TestNG.xml'
             }
         }
     }
