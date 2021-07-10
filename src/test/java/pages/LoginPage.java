@@ -3,12 +3,11 @@ package pages;
 import baseEntity.BasePage;
 import core.BrowsersService;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 
 public class LoginPage extends BasePage {
-    private String URL = "https://aqa5master7.testrail.io/";
+    private String URL = "https://aqa5master8.testrail.io/";
 
     private By EMAILSELECTOR = By.id("name");
     private By PASSWORDSELECTOR = By.id("password");
